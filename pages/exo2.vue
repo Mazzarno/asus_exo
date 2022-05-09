@@ -2,7 +2,7 @@
   <div>
     <vs-row justify="center" align="center" class="mt">
       <vs-col w="10" xs="12">
-        <Banniere1SVG data-aos="zoom-in" data-aos-duration="1000" />
+        <Banniere1SVG data-aos="zoom-in" data-aos-duration="1500" />
       </vs-col>
     </vs-row>
     <vs-row align="center" justify="center" :w="12" class="mt">
@@ -10,7 +10,7 @@
         <div class="mt">
           <h1
             data-aos="zoom-in-down"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             data-aos-delay="500"
             class="h1"
           >
@@ -20,7 +20,7 @@
         <div class="my">
           <h2
             data-aos="zoom-in-down"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             data-aos-delay="1000"
             class="h2"
           >
@@ -30,7 +30,7 @@
         <div class="mb">
           <h3
             data-aos="zoom-in-down"
-            data-aos-duration="1000"
+            data-aos-duration="1500"
             data-aos-delay="1500"
             class="h3"
           >
@@ -42,8 +42,8 @@
           <vs-col align="center" justify="center" :w="6" xs="12" class="mt">
             <div
               data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="2500"
+              data-aos-duration="1500"
+              data-aos-delay="2000"
               class="mx"
             >
               <img
@@ -68,31 +68,26 @@
             ></vs-dialog>
             <div
               data-aos="fade-right"
-              data-aos-duration="1000"
-              data-aos-delay="2500"
+              data-aos-duration="1500"
+              data-aos-delay="2000"
               class="mb"
             >
               <a
                 href="https://www.youtube.com/watch?v=0sjUjl_7nI8"
                 target="_blank"
                 rel="noopener noreferrer"
-                ><h3>Une touche de liberté - VivoBook S13/S14/S15 | ASUS</h3></a
+                ><h3 class="my">
+                  Une touche de liberté - VivoBook S13/S14/S15 | ASUS
+                </h3></a
               >
             </div>
           </vs-col>
 
-          <vs-col
-            align="center"
-            justify="center"
-            :w="6"
-            xs="12"
-            class="mt"
-            id="anchorvideo"
-          >
+          <vs-col align="center" justify="center" :w="6" xs="12" class="mt">
             <div
               data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="2500"
+              data-aos-duration="1500"
+              data-aos-delay="2000"
               class="mx"
             >
               <img
@@ -115,18 +110,18 @@
                   allowfullscreen
                 ></iframe></div
             ></vs-dialog>
-            <div
-              data-aos="fade-left"
-              data-aos-duration="1000"
-              data-aos-delay="2500"
-              class="mb"
-            >
+            <div>
               <a
                 href="https://www.youtube.com/watch?v=zIgEaGz_CO4"
                 target="_blank"
                 rel="noopener noreferrer"
               >
-                <h3>
+                <h3
+                  data-aos="fade-left"
+                  data-aos-duration="1500"
+                  data-aos-delay="2000"
+                  class="my"
+                >
                   Vivobook 13 Slate OLED - Votre PC. Votre écran OLED. À
                   emporter.
                 </h3></a
@@ -140,8 +135,8 @@
     <vs-row align="center" justify="center">
       <div
         data-aos="fade-down"
-        data-aos-duration="1000"
-        data-aos-delay="3000"
+        data-aos-duration="1500"
+        data-aos-delay="2500"
         class="mb"
       >
         <h3>Votre écran OLED Personnel</h3>
@@ -193,7 +188,9 @@
 <script>
 import Banniere1SVG from '../components/banniere1SVG.vue'
 import Banniere2SVG from '../components/banniere2SVG.vue'
+import aosMixin from '~/mixins/aos'
 export default {
+  mixins: [aosMixin],
   data() {
     return {
       popupVid1: false,

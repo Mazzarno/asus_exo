@@ -34,7 +34,6 @@
     <transition name="page" mode="out-in">
       <Nuxt />
     </transition>
-
     <!-- FOOTER -->
   </div>
 </template>
@@ -57,5 +56,8 @@ export default {
 .page-enter,
 .page-leave-to {
   opacity: 0;
+}
+html{
+  overflow-x: hidden !important;
 }
 </style>

@@ -27,10 +27,27 @@
         <template #animate>
           <span class="mdi mdi-36px mdi-responsive"></span></template
       ></vs-button>
+
+      <vs-button
+        data-aos="zoom-in-down"
+        data-aos-duration="2000"
+        data-aos-delay="2000"
+        animation-type="vertical"
+        class="mx"
+        size="xl"
+        warn
+        gradient
+        href="https://drive.google.com/file/d/13jN63LoQ5qKEoKSh3zq5qON0aAfTGT75/view"
+        blank
+        >Wireframe
+        <template #animate>
+          <span class="mdi mdi-36px mdi-download"></span></template
+      ></vs-button>
+
       <vs-button
         data-aos="zoom-in-left"
         data-aos-duration="2000"
-        data-aos-delay="2000"
+        data-aos-delay="3000"
         class="mx"
         size="xl"
         dark
@@ -44,6 +61,5 @@
     </vs-row>
   </div>
 </template>
-
 <script>
 </script>

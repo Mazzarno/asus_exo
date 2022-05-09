@@ -39,13 +39,22 @@ export default {
   components: true,
 
   // Modules for dev and build (recommended): https://go.nuxtjs.dev/config-modules
-  buildModules: [],
+ buildModules: ['nuxt-compress'],
 
   // Modules: https://go.nuxtjs.dev/config-modules
   modules: [
     '@nuxtjs/robots',
     '@nuxtjs/sitemap',
     'nuxtjs-mdi-font',
+    [ 'nuxt-compress',
+      {
+        gzip: {
+          threshold: 8192,
+        },
+        brotli: {
+          threshold: 8192,
+        },
+      },]
   ],
 
   generate: {

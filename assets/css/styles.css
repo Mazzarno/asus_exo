@@ -7,19 +7,23 @@ a {
   font-family: 'Lato';
   src: url('~assets/css/font/Lato/Lato-Bold.ttf');
   font-weight: bold;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montserrat';
   src: url('~assets/css/font/Montserrat/Montserrat-Italic.otf');
   font-style: italic;
+  font-display: swap;
 }
 @font-face {
   font-family: 'Poppins';
   src: url('~assets/css/font/Poppins/Poppins-Medium.ttf');
+  font-display: swap;
 }
 @font-face {
   font-family: 'Montreal, sans-serif';
   src: url('~assets/css/font/Montreal-Serial Regular.ttf');
+  font-display: swap;
 }
 h1 {
   font-family: 'Lato';
@@ -105,6 +109,7 @@ body,
 html {
   margin: 0 !important;
   padding: 0 !important;
+  overflow-x: hidden !important;
 }
 
 .container {
