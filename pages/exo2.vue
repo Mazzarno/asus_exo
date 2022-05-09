@@ -2,20 +2,50 @@
   <div>
     <vs-row justify="center" align="center" class="mt">
       <vs-col w="10" xs="12">
-        <Banniere1SVG />
+        <Banniere1SVG data-aos="zoom-in" data-aos-duration="1000" />
       </vs-col>
     </vs-row>
     <vs-row align="center" justify="center" :w="12" class="mt">
       <vs-col :w="10">
-        <div class="mt"><h1 class="h1">Vivobook OLED</h1></div>
-        <div class="my"><h2 class="h2">Votre écran OLED</h2></div>
+        <div class="mt">
+          <h1
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            class="h1"
+          >
+            Vivobook OLED
+          </h1>
+        </div>
+        <div class="my">
+          <h2
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            data-aos-delay="1000"
+            class="h2"
+          >
+            Votre écran OLED
+          </h2>
+        </div>
         <div class="mb">
-          <h3 class="h3">Découvrez l’univers du Vivobook OLED</h3>
+          <h3
+            data-aos="zoom-in-down"
+            data-aos-duration="1000"
+            data-aos-delay="1500"
+            class="h3"
+          >
+            Découvrez l’univers du Vivobook OLED
+          </h3>
         </div>
 
         <vs-row class="my">
           <vs-col align="center" justify="center" :w="6" xs="12" class="mt">
-            <div class="mx">
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="2500"
+              class="mx"
+            >
               <img
                 @click="popupVid1 = true"
                 src="~/assets/img/Video 1.jpg"
@@ -36,13 +66,35 @@
                   allowfullscreen
                 ></iframe></div
             ></vs-dialog>
-            <div class="mb">
-              <h3>Une touche de liberté - VivoBook S13/S14/S15 | ASUS</h3>
+            <div
+              data-aos="fade-right"
+              data-aos-duration="1000"
+              data-aos-delay="2500"
+              class="mb"
+            >
+              <a
+                href="https://www.youtube.com/watch?v=0sjUjl_7nI8"
+                target="_blank"
+                rel="noopener noreferrer"
+                ><h3>Une touche de liberté - VivoBook S13/S14/S15 | ASUS</h3></a
+              >
             </div>
           </vs-col>
 
-          <vs-col align="center" justify="center" :w="6" xs="12" class="mt">
-            <div class="mx">
+          <vs-col
+            align="center"
+            justify="center"
+            :w="6"
+            xs="12"
+            class="mt"
+            id="anchorvideo"
+          >
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="2500"
+              class="mx"
+            >
               <img
                 @click="popupVid2 = true"
                 src="~/assets/img/Video 2.jpg"
@@ -63,10 +115,22 @@
                   allowfullscreen
                 ></iframe></div
             ></vs-dialog>
-            <div class="mb">
-              <h3>
-                Vivobook 13 Slate OLED - Votre PC. Votre écran OLED. À emporter.
-              </h3>
+            <div
+              data-aos="fade-left"
+              data-aos-duration="1000"
+              data-aos-delay="2500"
+              class="mb"
+            >
+              <a
+                href="https://www.youtube.com/watch?v=zIgEaGz_CO4"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <h3>
+                  Vivobook 13 Slate OLED - Votre PC. Votre écran OLED. À
+                  emporter.
+                </h3></a
+              >
             </div>
           </vs-col>
         </vs-row>
@@ -74,7 +138,14 @@
     </vs-row>
 
     <vs-row align="center" justify="center">
-      <div class="mb"><h3>Votre écran OLED Personnel</h3></div>
+      <div
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-delay="3000"
+        class="mb"
+      >
+        <h3>Votre écran OLED Personnel</h3>
+      </div>
       <vs-col w="12">
         <Banniere2SVG />
       </vs-col>
@@ -83,7 +154,7 @@
       <div><h2>Découvrez nos PC étudiants</h2></div>
       <vs-row justify="center" class="m_podium">
         <div class="container mt">
-          <img width="70%" src="~/assets/img/podium_orange.png" alt="" />
+          <img width="70%" src="~/assets/img/podium_orange.png" />
           <div>
             <a
               href="https://www.asus.com/fr/Laptops/For-Home/Vivobook/"
@@ -94,7 +165,7 @@
                 <img
                   src="~/assets/img/vivobook PC.png"
                   width="70%"
-                  class="responsive asus_vivobook up"
+                  class="responsive asus_vivobook fly"
                 />
                 <template #tooltip> Parfait pour les étudiants </template>
               </vs-tooltip>

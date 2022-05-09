@@ -3,12 +3,11 @@
     <vs-row>
       <div class="container">
         <img
-          src="~/assets/img/Bannière 1.jpg"
+          src="~/assets/img/Banniere1.jpg"
           class="banniere1 responsive"
           alt="Vivobook 13 Slate OLED"
         />
 
-    
         <div class="decouvrir1">
           <vs-button
             size="xl"
@@ -136,7 +135,7 @@
       <div class="mb"><h3>Votre écran OLED Personnel</h3></div>
       <div class="container">
         <img
-          src="~/assets/img/Bannière 2.jpg"
+          src="~/assets/img/Banniere2.jpg"
           class="banniere2 responsive"
           alt=""
           srcset=""

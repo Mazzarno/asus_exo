@@ -15,12 +15,12 @@ export default {
       { name: 'format-detection', content: 'telephone=no' },
       // Open Graph / Facebook
       { hid: 'og:type', property: 'og:type', content: "website" },
-      { hid: 'og:url', property: 'og:url', content: "" },
+      { hid: 'og:url', property: 'og:url', content: "https://asus.mazzar.fr/" },
       { hid: 'og:title', property: 'og:title', content: "ASUS Vivobook 13 Slate OLED (T3300)" },
       { hid: 'og:description', property: 'og:description', content: "Découvrez le Vivobook 13 Slate OLED, ce fantastique compagnon portable 2 en 1 qui vous permet d’apprécier plus facilement tout ce que vous aimez, où que vous soyez. Que ce soit pour étudier ou travailler, vous détendre ou discuter, à la verticale ou à l'horizontale, le Vivobook 13 Slate OLED s'adapte à toutes vos envies pour que vous puissiez travailler ou jouer à votre guise !" },
       // Twitter
       { hid: 'twitter:card', property: 'twitter:card', content: "summary_large_image" },
-      { hid: 'twitter:url', property: 'twitter:url', content: "" },
+      { hid: 'twitter:url', property: 'twitter:url', content: "https://asus.mazzar.fr/" },
       { hid: 'twitter:title', property: 'twitter:title', content: "ASUS Vivobook 13 Slate OLED (T3300)" },
       { hid: 'twitter:description', property: 'twitter:description', content: "Découvrez le Vivobook 13 Slate OLED, ce fantastique compagnon portable 2 en 1 qui vous permet d’apprécier plus facilement tout ce que vous aimez, où que vous soyez. Que ce soit pour étudier ou travailler, vous détendre ou discuter, à la verticale ou à l'horizontale, le Vivobook 13 Slate OLED s'adapte à toutes vos envies pour que vous puissiez travailler ou jouer à votre guise !" },
     ],
@@ -33,8 +33,7 @@ export default {
 //loading: '~/components/loading.vue',
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: ['~/plugins/vuesax'
-  ],
+  plugins: ['~/plugins/vuesax'],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
@@ -49,6 +48,15 @@ export default {
     'nuxtjs-mdi-font',
   ],
 
+  generate: {
+    dir:'htdocs',
+    fallback: '404.html',
+    routes: ['/', '/exo1', '/exo2'],
+    subFolders: false,
+    crawler: false,
+  },
+
+
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
       robots: {
@@ -59,7 +67,7 @@ export default {
     Sitemap: 'https://www./sitemap.xml'
   },
       sitemap: {
-    hostname: 'https://www.',
+    hostname: 'https://asus.mazzar.fr/',
     Default: {
     changefreq: 'daily',
     priority: 1,
@@ -67,7 +75,19 @@ export default {
      },
     routes: [
       {
-      url: '/',
+      url: 'https://asus.mazzar.fr/exo1',
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+      },
+      {
+      url: 'https://asus.mazzar.fr/exo2',
+      changefreq: 'daily',
+      priority: 1,
+      lastmod: new Date()
+      },
+          {
+      url: 'https://asus.mazzar.fr/404',
       changefreq: 'daily',
       priority: 1,
       lastmod: new Date()
