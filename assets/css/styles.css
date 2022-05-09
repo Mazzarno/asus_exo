@@ -1,0 +1,256 @@
+/* RESET CSS */
+
+/* FONT */
+@font-face {
+  font-family: 'Lato';
+  src: url('~assets/css/font/Lato/Lato-Bold.ttf');
+  font-weight: bold;
+}
+@font-face {
+  font-family: 'Montserrat';
+  src: url('~assets/css/font/Montserrat/Montserrat-Italic.otf');
+  font-style: italic;
+}
+@font-face {
+  font-family: 'Poppins';
+  src: url('~assets/css/font/Poppins/Poppins-Medium.ttf');
+}
+@font-face {
+  font-family: 'Montreal, sans-serif';
+  src: url('~assets/css/font/Montreal-Serial Regular.ttf');
+}
+h1 {
+  font-family: 'Lato';
+  font-weight: bold;
+  color: #e63946; /*#ef476f*/
+  font-size: 16px;
+}
+h2 {
+  font-family: 'Montserrat';
+  font-style: italic;
+  color: #2a9d8f; /*#06d6a0*/
+  font-size: 14px;
+}
+h3 {
+  font-family: 'Poppins';
+  background: -webkit-linear-gradient(#0575e6, #021b79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 13px;
+}
+/* FONT RESIZE */
+.h1 {
+  font-family: 'Lato';
+  font-weight: bold;
+  color: #e63946; /*#ef476f*/
+  font-size: 1em !important;
+}
+.h2 {
+  font-family: 'Montserrat';
+  font-style: italic;
+  color: #2a9d8f; /*#06d6a0*/
+  font-size: 0.875em !important;
+}
+.h3 {
+  font-family: 'Poppins';
+  background: -webkit-linear-gradient(#0575e6, #021b79);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 0.813em !important;
+}
+p {
+  font-family: 'Lato';
+  color: #060f22;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+}
+/* LAYOUT */
+#app {
+  text-align: center;
+  width: 100% !important;
+  min-width: 100% !important;
+  min-height: 100% !important;
+  background-color: #fffff;
+  overflow-y: auto !important;
+  overflow-x: hidden !important;
+}
+.logo_asus {
+  height: 16px;
+  width: 78px;
+  background-image: url('~assets/img/logo_asus_black.svg');
+}
+.logo_asus:hover {
+  height: 16px;
+  width: 78px;
+  background-image: url('~assets/img/logo_asus_blue.svg');
+}
+.home {
+  height: 100vh;
+}
+body,
+html {
+  margin: 0 !important;
+  padding: 0 !important;
+}
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #fffff;
+  border-radius: 5px;
+}
+::-webkit-scrollbar-thumb {
+  background: #060f22;
+  border-radius: 10px;
+}
+.container {
+  display: inline-block;
+  position: relative;
+}
+.banniere1 {
+  width: 100vw;
+}
+.decouvrir1 {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: 15%;
+  right: 0;
+  bottom: 12%;
+}
+.container .oled {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: 92.1%;
+  right: 0;
+  bottom: 4%;
+}
+.container .LDLC {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: 74%;
+  right: 0;
+  bottom: 7.5%;
+}
+.container .fnac {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  left: 81%;
+  right: 0;
+  bottom: 7.5%;
+}
+.container .darty {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: 87%;
+  right: 0;
+  bottom: 7.5%;
+}
+.video-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+.video-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+.banniere2 {
+  width: 100vw;
+  max-height: 100vh;
+}
+.text_img {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 30%;
+  bottom: 76%;
+}
+.text_white {
+  text-shadow: 1px 1px 20px #000000, -1px -1px 20px #000000;
+  font-size: 1.5em;
+  color: white;
+}
+
+.decouvrir2 {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: ;
+  right: 61%;
+  bottom: 66%;
+}
+.decouvrir3 {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: ;
+  right: 31%;
+  bottom: 40%;
+}
+.asus_vivobook_tooltip {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 5%;
+  bottom: 78%;
+}
+.text_podium {
+  z-index: 1;
+  position: absolute;
+  margin: 0;
+  left: 0;
+  right: 0%;
+  bottom: 63%;
+}
+.p_podium {
+  font-size: 1em;
+}
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+.mx {
+  margin: 0 2em 0 2em;
+}
+.my {
+  margin: 2em 0 2em 0;
+}
+.mt {
+  margin: 2em 0 0 0;
+}
+.mb {
+  margin: 0 0 2em 0;
+}
+.ma {
+  margin: 2em;
+}
+
+.m_podium {
+  margin: 8em 0 0 0;
+}
+/* animations */
+.zoom {
+  transition: transform 0.2s !important;
+}
+.zoom:hover {
+  transform: scale(1.1) !important;
+}
+.up {
+  transition: transform 0.2s !important;
+}
+.up:hover {
+  transform: translateY(-5px) !important;
+}
