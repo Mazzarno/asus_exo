@@ -18,7 +18,7 @@
         to="/exo2"
         dark
         gradient
-        href="https://github.com/Mazzarno"
+        href="https://github.com/Mazzarno/asus_exo"
         blank
         >Code
         <template #animate>
