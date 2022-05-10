@@ -111,7 +111,6 @@ html {
   padding: 0 !important;
   overflow-x: hidden !important;
 }
-
 .container {
   display: inline-block;
   position: relative;
@@ -190,7 +189,6 @@ html {
   font-size: 1.5em;
   color: white;
 }
-
 .decouvrir2 {
   z-index: 1;
   position: absolute;

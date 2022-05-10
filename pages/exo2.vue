@@ -43,7 +43,7 @@
             <div
               data-aos="fade-right"
               data-aos-duration="1500"
-              data-aos-delay="2000"
+              data-aos-delay="1600"
               class="mx"
             >
               <img
@@ -51,6 +51,7 @@
                 src="~/assets/img/Video 1.jpg"
                 class="zoom responsive"
                 width="90%"
+                alt="Vivobook 13 Slate OLED"
               />
             </div>
 
@@ -69,7 +70,7 @@
             <div
               data-aos="fade-right"
               data-aos-duration="1500"
-              data-aos-delay="2000"
+              data-aos-delay="1700"
               class="mb"
             >
               <a
@@ -87,13 +88,14 @@
             <div
               data-aos="fade-left"
               data-aos-duration="1500"
-              data-aos-delay="2000"
+              data-aos-delay="1600"
               class="mx"
             >
               <img
                 @click="popupVid2 = true"
                 src="~/assets/img/Video 2.jpg"
                 class="zoom responsive"
+                alt="Vivobook 13 Slate OLED"
                 width="90%"
               />
             </div>
@@ -119,7 +121,7 @@
                 <h3
                   data-aos="fade-left"
                   data-aos-duration="1500"
-                  data-aos-delay="2000"
+                  data-aos-delay="1700"
                   class="my"
                 >
                   Vivobook 13 Slate OLED - Votre PC. Votre écran OLED. À
@@ -136,7 +138,7 @@
       <div
         data-aos="fade-down"
         data-aos-duration="1500"
-        data-aos-delay="2500"
+        data-aos-delay="2000"
         class="mb"
       >
         <h3>Votre écran OLED Personnel</h3>
@@ -149,7 +151,11 @@
       <div><h2>Découvrez nos PC étudiants</h2></div>
       <vs-row justify="center" class="m_podium">
         <div class="container mt">
-          <img width="70%" src="~/assets/img/podium_orange.png" />
+          <img
+            width="70%"
+            src="~/assets/img/podium_orange.png"
+            alt="Vivobook 13 Slate OLED"
+          />
           <div>
             <a
               href="https://www.asus.com/fr/Laptops/For-Home/Vivobook/"
@@ -161,6 +167,7 @@
                   src="~/assets/img/vivobook PC.png"
                   width="70%"
                   class="responsive asus_vivobook fly"
+                  alt="Vivobook 13 Slate OLED"
                 />
                 <template #tooltip> Parfait pour les étudiants </template>
               </vs-tooltip>
